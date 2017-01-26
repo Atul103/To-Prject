@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  background: #232323;
+  background-image: url("http://www.vegasholidayoffers.com/sites/LasVegas/Images/Home/Slide-3.jpg");
+  background-size: cover;
+}
+
+
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 110px;
+  color: #aaaaaa;
+  margin: 50px 0 0 0;
+}
+p {
+
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 40px;
+  line-height: 30px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  font-family: 'Merienda One', cursive;
+  height: 10px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+div
+{
+  height: 500px;
+  position: relative;
+  border-radius: 30px;
+  margin:60px;
+
+}
+
+.first{
+  background-image: url("http://www.hotel-r.net/im/hotel/hr/deluxe-room.jpg");
+  background-width: 300px;
+  background-size: cover;
+}
+.second{
+   background-image: url("https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_60,fl_progressive/w_900,f_auto,c_fit/hotel-anchor-chennai/Semi_Deluxe_Room_The_Anchor_Hotel_Chennai_dnylde?1480723201074");
+   background-width: 300px;
+   background-size: cover;
+}
+.third{
+  background-image: url("https://cache.carlsonhotels.com/ow-cms/rad/images/hotels/MNBLMMAL/CMSNEW/Double_Queen_960x360.jpg");
+  background-width: 300px;
+  background-size: cover;
+
+}
+small {
+  opacity: 0;
+}
+.show-description p{
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+.price {
+  float: right;
+}
+@media (max-width:500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  .first{
+  background-image: url("http://www.hotel-r.net/im/hotel/hr/deluxe-room.jpg");
+  background-width: 300px;
+  background-size: cover;
+ margin:20px 12px 0 12px;
+}
+.second{
+  background-image: url("https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_60,fl_progressive/w_900,f_auto,c_fit/hotel-anchor-chennai/Semi_Deluxe_Room_The_Anchor_Hotel_Chennai_dnylde?1480723201074");
+background-width: 300px;
+background-size: cover;
+margin:20px 12px 0 12px;
+}
+.third{
+  background-image: url("https://cache.carlsonhotels.com/ow-cms/rad/images/hotels/MNBLMMAL/CMSNEW/Double_Queen_960x360.jpg");
+  background-width: 300px;
+  background-size: cover;
+  margin:20px 12px 0 12px;
+}
+
+  p {
+    font-size:20px;
+    line-height:20px;
+  }
+  small {
+    font-size:15px;
+  }
+  .show-description p {
+    height:200px;
+  }
+  .show-description small {
+    opacity:1;
+  }
+}
+
+
+</style>
+
+</head>
+
+<body>
+<h1>Atul's Residency</h1>
+
+<div class="first">
+  <p>Deluxe Room <span class="price">Rs 4999-/night</span><br />
+  <small>Specification-Aiconditioned,     with best room service,   24hrs(Wifi Service),  Space for Parking ,    River Side view,Free Breakfast and(Special Offer of entertaning maximum 3 people without charging any extra amount.     </small></p>
+</div>
+
+<div class="second ">
+  <p>Semi Deluxe Room <span class="price">Rs 2499-/night</span><br />
+  <small>Specification-Aiconditioned, with best room service,24hrs (Wifi Service), Space for Parking    and(Special Offer of entertaning maximum 3 people without charging any extra amount. River side view.The best service in the town .</small></p></div>
+
+<div class="third">
+  <p>Economical Room <span class="price">Rs 999-/night</span><br />
+  <small>Specification-Best room service,24hrs(Wifi Service),Space for Parking and(Special Offer of entertaning maximum 3 people without charging any extra amount.River side view. The best service in the town .</small></p>
+</div>
+<script>
+$('div').on('click', function() {
+  console.log($(this));
+  $(this).toggleClass('show-description');
+});
+</script>
+</body>
